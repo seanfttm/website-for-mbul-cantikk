@@ -3,49 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>for you 💗</title>
+<title>an apology for my mbul</title>
 
 <style>
+
 body{
-    background: linear-gradient(to bottom, #ffd6e7, #fff);
-    font-family: Arial;
-    padding: 30px;
-    color: #ff4f81;
-    text-align: center;
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffc0d9, #ffe6f0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
+    background:white;
+    padding:25px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(255,105,180,0.3);
+}
+
+img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:20px;
+    border:5px solid #ff8fb8;
 }
 
 h1{
-    font-size: 35px;
+    color:#ff4f81;
+    margin-bottom:20px;
 }
 
-p{
-    font-size: 18px;
-    line-height: 1.8;
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+input{
+    width:80%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#ffe3ee;
+    font-size:18px;
+    text-align:center;
+    outline:none;
+    margin-bottom:15px;
 }
+
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:20px;
+    background:#ff4f81;
+    color:white;
+    font-size:16px;
+}
+
+#message{
+    display:none;
+    margin-top:20px;
+    color:#d6336c;
+    line-height:1.8;
+    text-align:left;
+}
+
+.nextBtn{
+    margin-top:20px;
+}
+
 </style>
 </head>
 
 <body>
 
-<script>
-let password = prompt("masukin password dulu sayang 💌");
+<div class="container">
 
-if(password !== "iloveyou") {
-    alert("password salah 😞");
-    window.location.href = "https://google.com";
-}
-</script>
+<img src="fotokamu.jpg">
 
-<h1>for my favorite person 💗</h1>
+<h1>password nya tanggal jadian kita, mbul (tanggalbulan</h1>
+
+<div id="loginBox">
+<input type="password" id="password" placeholder="••••••">
+<br>
+<button onclick="checkPassword()">open</button>
+</div>
+
+<div id="message">
+
+<h2>for my favorite mbul 💗</h2>
 
 <p>
-sayang, aku mau minta maaf buat kemarin karena aku ninggalin kamu seharian dan jadi jarang ada buat kamu...
+sayang, aku mau minta maaf buat kemarin karena aku ninggalin kamu seharian dan jadi jarang ada buat kamu. aku tahu mungkin itu bikin kamu ngerasa diabaikan, kesepian, atau kepikiran, apalagi biasanya kita sering ngobrol dan nemenin satu sama lain. jujur aku bener-bener nggak ada niat buat bikin kamu ngerasa kayak gitu. kemarin aku memang lagi sibuk banget sampai banyak hal kelewat, tapi itu bukan berarti aku lupa sama kamu atau nggak peduli sama kamu. di tengah sesibuk apa pun aku, kamu tetap jadi orang yang aku pikirin.
 </p>
+
+<p>
+aku sadar kadang aku terlalu fokus sama apa yang lagi aku kerjain sampai lupa kalau ada kamu yang juga butuh diperhatikan. dan aku ngerti kalau minta maaf aja mungkin nggak langsung bikin semuanya membaik, tapi aku harap kamu tahu kalau aku nyesel bikin kamu ngerasa sendirian. kamu itu seseorang yang sangat berarti buat aku, jadi rasanya nggak enak banget pas sadar aku malah bikin kamu sedih karena sikap aku sendiri.
+</p>
+
+<p>
+terima kasih karena masih sabar sama aku, masih ngerti keadaan aku, dan masih tetap ada walaupun kadang aku belum bisa jadi yang terbaik setiap waktu. aku bakal berusaha buat lebih ngabarin kamu, lebih ngeluangin waktu, dan lebih peka sama perasaan kamu ke depannya. aku nggak mau kesibukan aku bikin kamu ngerasa kehilangan aku sedikit demi sedikit.
+</p>
+
+<p>
+sekali lagi, maafin aku ya, sayang. aku sayang banget sama kamu, lebih dari yang mungkin bisa aku jelasin lewat kata-kata.
+</p>
+
+<button class="nextBtn" onclick="nextPage()">next 💗</button>
+
+</div>
+
+</div>
+
+<script>
+
+function checkPassword(){
+    let pass = document.getElementById("password").value;
+
+    if(pass === "1804"){
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("message").style.display = "block";
+    } else {
+        alert("password salah 😞");
+    }
+}
+
+function nextPage(){
+    alert("i love you in every ounce of my being mbul");
+}
+
+</script>
 
 </body>
 </html>
